@@ -1,0 +1,69 @@
+{
+  "version": "v1.0.0",
+  "entity": {
+    "type": "organisation",
+    "role": "owner",
+    "name": "AI Builders Foundation",
+    "email": "hello@aibuildershq.org",
+    "description": "A 501(c)(3) public-charity nonprofit (EIN 42-1986706) building an open, vendor-neutral 'university for AI builders' — free curriculum, hackathon starter kits, and community tooling that teach anyone to build full-stack AI applications. Events, courses, community, and open source, given away for the public good.",
+    "webpageUrl": {
+      "url": "https://aibuildershq.org"
+    }
+  },
+  "projects": [
+    {
+      "guid": "ai-builders-curriculum",
+      "name": "AI Builders Curriculum",
+      "description": "An open-source, vendor-neutral curriculum and set of hackathon starter kits for learning to build AI applications end-to-end — data, auth, functions, model/agent integration, and deployment. MIT-licensed teaching material used in the Foundation's free hackathons and cohorts, clonable by any educator or self-learner. The 'courses + events + open source' pillars of the Foundation, as code.",
+      "webpageUrl": {
+        "url": "https://aibuildershq.org/open-source"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/ai-builders-foundation/ai-builders-curriculum"
+      },
+      "licenses": [
+        "spdx:MIT"
+      ],
+      "tags": [
+        "education",
+        "artificial-intelligence",
+        "curriculum",
+        "hackathon",
+        "developer-tools",
+        "learning",
+        "open-educational-resources"
+      ]
+    }
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "bank",
+        "type": "bank",
+        "address": "AI Builders Foundation — details provided on request",
+        "description": "US nonprofit operating account (AI Builders Foundation, EIN 42-1986706)."
+      }
+    ],
+    "plans": [
+      {
+        "guid": "seed-curriculum",
+        "status": "active",
+        "name": "Seed the open curriculum + starter kits",
+        "description": "Author and open-source the first full AI-builder curriculum track (8-12 modules) plus 5 hackathon starter kits, all MIT-licensed. Covers technical writing, example apps, tests, and CI so the material is maintainable and clonable by any educator.",
+        "amount": 25000,
+        "currency": "USD",
+        "frequency": "one-time"
+      },
+      {
+        "guid": "annual-maintenance",
+        "status": "active",
+        "name": "Annual maintenance + hackathon runs",
+        "description": "Keep the curriculum current with a fast-moving field, run 3-4 free community hackathons per year against the starter kits, and support contributors. Sustains the open educational resource beyond the initial build.",
+        "amount": 50000,
+        "currency": "USD",
+        "frequency": "yearly"
+      }
+    ],
+    "history": []
+  }
+}

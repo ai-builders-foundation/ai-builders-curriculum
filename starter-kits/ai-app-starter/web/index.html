@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI App Starter</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1>AI Notes</h1>
+        <p class="app__subtitle">
+          A tiny full-stack starter: a database, a JSON API, and an LLM-powered
+          summarize button. Edit it, break it, make it yours.
+        </p>
+      </header>
+
+      <!-- Create a note -->
+      <section class="card">
+        <h2>New note</h2>
+        <form id="note-form" class="form">
+          <label class="form__label" for="title">Title</label>
+          <input id="title" name="title" class="form__input" maxlength="200"
+                 placeholder="Meeting with the design team" required />
+
+          <label class="form__label" for="body">Body</label>
+          <textarea id="body" name="body" class="form__textarea" rows="5"
+                    placeholder="Write anything. Then hit Summarize on the note below."></textarea>
+
+          <button type="submit" class="button">Add note</button>
+        </form>
+      </section>
+
+      <!-- Notes list (rendered by app.js) -->
+      <section>
+        <h2 class="notes__heading">Your notes</h2>
+        <p id="empty" class="notes__empty">No notes yet. Add one above.</p>
+        <ul id="notes" class="notes"></ul>
+      </section>
+
+      <footer class="app__footer">
+        Part of the
+        <a href="https://aibuildershq.org">AI Builders Foundation</a>
+        open curriculum · MIT licensed
+      </footer>
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+.yarn/
+
+# Environment / secrets — never commit real keys
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# Build output
+dist/
+build/
+out/
+.next/
+.cache/
+*.tsbuildinfo
+
+# Local data stores (starter kits may create these)
+*.sqlite
+*.sqlite3
+*.db
+data/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python (some starter kits / examples are Python)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+Thumbs.db
