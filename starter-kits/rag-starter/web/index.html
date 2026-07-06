@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RAG Starter</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1>RAG Starter</h1>
+        <p class="app__subtitle">
+          A tiny retrieval-augmented generation app: ingest text, then ask
+          questions and get answers grounded in exactly what you gave it —
+          with sources you can check.
+        </p>
+      </header>
+
+      <!-- Ingest a document -->
+      <section class="card">
+        <h2>Add a document</h2>
+        <form id="ingest-form" class="form">
+          <label class="form__label" for="title">Title</label>
+          <input id="title" name="title" class="form__input" maxlength="200"
+                 placeholder="Company travel policy" required />
+
+          <label class="form__label" for="text">Text</label>
+          <textarea id="text" name="text" class="form__textarea" rows="6"
+                    placeholder="Paste the document text here. It will be chunked, embedded, and stored."
+                    required></textarea>
+
+          <button type="submit" class="button">Ingest</button>
+        </form>
+      </section>
+
+      <!-- Ingested documents (rendered by app.js) -->
+      <section>
+        <h2 class="notes__heading">Your documents</h2>
+        <p id="docs-empty" class="notes__empty">
+          No documents yet — add one above. (Two samples about RAG itself
+          seed automatically the first time you run the server.)
+        </p>
+        <ul id="documents" class="notes"></ul>
+      </section>
+
+      <!-- Ask a question -->
+      <section class="card">
+        <h2>Ask a question</h2>
+        <form id="ask-form" class="form">
+          <label class="form__label" for="question">Question</label>
+          <input id="question" name="question" class="form__input"
+                 placeholder="What are the five steps of RAG?" required />
+          <button type="submit" class="button">Ask</button>
+        </form>
+
+        <div id="answer" class="answer" hidden>
+          <h3>Answer</h3>
+          <p id="answer-text"></p>
+          <h4>Sources</h4>
+          <ol id="answer-sources" class="sources"></ol>
+        </div>
+      </section>
+
+      <footer class="app__footer">
+        Part of the
+        <a href="https://aibuildershq.org">AI Builders Foundation</a>
+        open curriculum · MIT licensed
+      </footer>
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

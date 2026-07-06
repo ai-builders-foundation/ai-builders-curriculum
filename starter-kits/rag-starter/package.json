@@ -1,0 +1,27 @@
+{
+  "name": "rag-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A minimal, vendor-neutral retrieval-augmented generation (RAG) starter: ingest text documents, chunk and embed them into SQLite, then ask questions and get answers grounded in exactly that data, with cited sources. Clone it and build on it in a weekend.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "tsx watch server/index.ts",
+    "start": "tsx server/index.ts",
+    "migrate": "tsx server/migrate.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^20.17.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.3"
+  }
+}
