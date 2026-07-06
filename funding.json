@@ -52,7 +52,10 @@
         "description": "Author and open-source the first full AI-builder curriculum track (8-12 modules) plus 5 hackathon starter kits, all MIT-licensed. Covers technical writing, example apps, tests, and CI so the material is maintainable and clonable by any educator.",
         "amount": 25000,
         "currency": "USD",
-        "frequency": "one-time"
+        "frequency": "one-time",
+        "channels": [
+          "bank"
+        ]
       },
       {
         "guid": "annual-maintenance",
@@ -61,7 +64,10 @@
         "description": "Keep the curriculum current with a fast-moving field, run 3-4 free community hackathons per year against the starter kits, and support contributors. Sustains the open educational resource beyond the initial build.",
         "amount": 50000,
         "currency": "USD",
-        "frequency": "yearly"
+        "frequency": "yearly",
+        "channels": [
+          "bank"
+        ]
       }
     ],
     "history": []
